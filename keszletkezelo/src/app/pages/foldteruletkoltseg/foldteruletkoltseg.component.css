@@ -1,0 +1,63 @@
+.heading {
+    border-bottom: 1px solid #DAE1E8;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+    height: 80px;
+}
+
+#content{
+    margin-right: 40px;
+    margin-left: 20px;
+
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+.tablediv{
+    
+    margin-right: 0px;
+    float:left; /* add this */
+    width: 70%;
+}
+.muveletek{
+    float:right; /* add this */
+    width: 30%;
+    text-align: left;
+    padding-left: 20px;
+}
+input, label {
+    display:block;
+    width: 120px;
+    font-family: 'Open Sans',sans-serif;
+    height: 19px;
+    color: #40779d;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+option{
+    width: 400px;
+}
+span.required{
+    color: #ff0000;
+}
+.span6{
+    float:left;
+   
+    width: 450px;
+
+}
+
+   
+.content{
+    height: 150px;
+
+    margin-left: 20px;
+}
+.koltseg{
+    text-align: left;
+    
+    margin-left: 20px;
+}

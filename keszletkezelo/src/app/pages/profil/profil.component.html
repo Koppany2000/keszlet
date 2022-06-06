@@ -1,0 +1,51 @@
+<h3 class="heading">Profil részletei</h3>
+<div id="content">
+   
+       
+        
+        <div class="tablediv">
+            <div class="summary">Eredmények megjelenítése 1-től 10-ig 14 találatból.</div>
+        <nz-table #basicTable [nzData]="listOfData">
+           
+           
+              <tr>
+                <th nzWidth="90px">Szerepkör</th>
+                <td>{{basicTable.data[0].felhasznalonev}}</td>
+              </tr>
+              <tr>
+                <th nzWidth="90px">Nyelv</th>
+                <td>{{basicTable.data[0].felhasznalonev}}</td>
+                
+              </tr>
+              <tr>
+                <th nzWidth="9px">Készleten</th>
+                <td>{{basicTable.data[0].felhasznalonev}}</td>
+                
+                </tr>
+                <tr>
+                    <th  nzWidth="90px">Mennyiségi egység</th>
+                <td>{{basicTable.data[0].felhasznalonev}}</td>
+                
+                </tr>
+                <tr>
+                    <th nzWidth="90px">Átlagos beszerzési nettó egységár</th>
+                <td>{{basicTable.data[0].felhasznalonev}}</td>
+                
+               
+              </tr>
+            
+            
+            
+           
+          </nz-table>
+        </div>
+        <div class="muveletek">
+            Műveletek
+            <ul>
+                <li><a routerLink="/teszt" routerLinkActive="active" >Profil szerkesztése</a></li>
+              
+            </ul>
+        </div>
+   
+
+</div>

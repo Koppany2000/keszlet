@@ -1,0 +1,34 @@
+.heading {
+    border-bottom: 1px solid #DAE1E8;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+    height: 80px;
+}
+
+#content{
+    margin-right: 40px;
+    margin-left: 20px;
+
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+.tablediv{
+    
+    margin-right: 0px;
+    float:left; /* add this */
+    width: 70%;
+}
+.muveletek{
+    float:right; /* add this */
+    width: 30%;
+    text-align: left;
+    padding-left: 20px;
+}
+.td{
+    text-align: left;
+}
+
+

@@ -1,0 +1,52 @@
+<h3 class="heading">Általános beszerzések</h3>
+<div id="content">
+    <div style="text-align:right">
+        <button nz-button nzType="default"><a class="btn btn-default" href="">Új beszerzés</a></button>
+        <div class="summary">Eredmények megjelenítése 1-től 10-ig 64 találatból.</div>
+    </div>
+        <nz-table #basicTable [nzData]="listOfData" [nzWidthConfig]="widthConfig">
+           
+            <thead>
+              <tr>
+                <th >Azonosító</th>
+                <th>Dátum</th>
+                <th>Gazdasági év</th>
+                <th>Település</th>
+                <th>Fekvés</th>
+                <th>Hrsz</th>
+                <th>Terület nagysága (hektár)</th>
+                <th>Műveletet elvégző szállító / személy</th>
+                <th>Művelet</th>
+                <th>Bérmunka</th>
+                <th>Munkadíj nettó</th>
+                <th>Munkadíj áfa</th>
+                <th>Munkadíj bruttó</th>
+           
+                
+              </tr>
+            
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of basicTable.data">
+                <td>{{data.felhasznalonev}}</td>
+                <td>{{data.utolsoaktiv}}</td>
+                <td>{{data.gazdev}}</td>
+                <td>{{data.telepules}}</td>
+                <td>{{data.fekves}}</td>
+                <td>{{data.hrsz}}</td>
+                <td>{{data.nagysag}}</td>
+                <td>{{data.muveletszemely}}</td>
+                <td>{{data.muvelet}}</td>
+                <td>{{data.bermunka}}</td>
+                <td>{{data.munkadij}}</td>
+                <td>{{data.munkadijafa}}</td>
+                <td>{{data.munkadijbrutto}}</td>
+               
+              </tr>
+            </tbody>
+          </nz-table>
+      
+    
+
+
+</div>

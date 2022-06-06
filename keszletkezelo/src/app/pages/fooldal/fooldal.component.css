@@ -1,0 +1,27 @@
+.heading {
+    border-bottom: 1px solid #DAE1E8;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 80px;
+}
+
+.span9{
+
+    width: 74.46808510638297%;
+    margin-left: 20px;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+   
+
+}
+.small{
+    height: 60px;
+}
+[nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+  }

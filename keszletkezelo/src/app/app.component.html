@@ -1,0 +1,51 @@
+<nz-layout>
+  <nz-header>
+    
+    <div class="element">Adminisztráció</div>
+    <div class="element2">Belépve: felhasználó Szerepkör: Fejlesztő</div> 
+  
+  </nz-header>
+  <nz-layout>
+    <nz-sider>
+      <ul nz-menu nzMode="inline">
+        <li nz-menu-item nzSelected><a routerLink="/fooldal" routerLinkActive="active" > Főoldal</a></li>
+        <li nz-menu-item nzSelected><a routerLink="/muveletek" routerLinkActive="active" >Műveletek</a></li>
+        <li nz-submenu nzTitle="Anyagok">
+          <ul>
+            <li nz-menu-item><a routerLink="/anyagKeszlet" routerLinkActive="active" >Készlet</a></li>
+            <li nz-menu-item><a routerLink="/anyagBeszerzes" routerLinkActive="active" >Beszerzés</a></li>
+            <li nz-menu-item><a routerLink="/anyagKategoriak" routerLinkActive="active" >Anyagkategóriák</a></li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Eszközök">
+          <ul>
+            <li nz-menu-item><a routerLink="/eszkozKeszlet" routerLinkActive="active" >Készlet</a></li>
+            <li nz-menu-item><a routerLink="/eszkozBeszerzes" routerLinkActive="active" >Beszerzés</a></li>
+          </ul>
+        </li>
+        <li nz-menu-item><a routerLink="/altalanosBeszerzes" routerLinkActive="active" >Általános beszerzések</a> </li>
+        <li nz-menu-item><a routerLink="/foldteruletek" routerLinkActive="active" >Földterületek</a></li>
+        <li nz-menu-item><a routerLink="/foldteruletkoltseg" routerLinkActive="active" >Földterületek költségei</a> </li>
+        <li nz-menu-item><a routerLink="/foldhasznalok" routerLinkActive="active" >Földhasználók</a></li>
+        <li nz-menu-item><a routerLink="/telepulesek" routerLinkActive="active" >Települések</a></li>
+        <li nz-menu-item><a routerLink="/gazdasagievek" routerLinkActive="active" >Gazdasági évek</a> évek</li>
+        <li nz-menu-item><a routerLink="/seoBeallitas" routerLinkActive="active" >SEO beállítások</a></li>
+        <li nz-menu-item><a routerLink="/nyelvek" routerLinkActive="active" >Nyelvek kezelése</a></li>
+        <li nz-menu-item><a routerLink="/profil" routerLinkActive="active" >Profil</a></li>
+        <li nz-menu-item><a routerLink="/felhasznalok" routerLinkActive="active" >Felhasználók</a></li>
+        <<li nz-submenu nzTitle="E-mail">
+          <ul>
+            <li nz-menu-item><a routerLink="/semak" routerLinkActive="active" >Sémák</a></li>
+            <li nz-menu-item><a routerLink="/naplo" routerLinkActive="active" >Napló</a></li>
+            <li nz-menu-item><a routerLink="/teszt" routerLinkActive="active" >Teszt</a></li>
+          </ul>
+        </li>
+        <li nz-menu-item>Kilépés</li>
+      </ul>
+
+    </nz-sider>
+    <nz-content><router-outlet></router-outlet></nz-content>
+    
+  </nz-layout>
+  <nz-footer></nz-footer>
+</nz-layout>
